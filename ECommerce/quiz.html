@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    .questions{
+        background-color: azure;
+        display: inline-block;
+        margin: 0px 20px 50px 10px;
+        border: 1px solid black;
+        width: 500px;
+        height:250px;
+        padding: 20px;
+    }
+
+    button{
+        display: inline;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Digital E-Commerce</h1>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="products.html">Products</a>
+    <a href="career.html" target="_blank">Career</a>
+    <br>
+    <hr><br>
+
+    <ol>
+        <li>Do Not Google</li>
+        <li>Pass Percentage 60%</li>
+    </ol>
+    <hr>
+    <div class="questions">
+        <ol>
+            <li>What is HTML</li>
+            <input type="radio" name="html">Hyper Text Markup Language<br>
+            <input type="radio" name="html">Hyper Text Makeup Language<br>
+            <input type="radio" name="html">None of the above
+            <br><br>
+            <li>What is CSS</li>
+            <input type="radio" name="css">Cascading Style Sheet<br>
+            <input type="radio" name="css">Cascading Style suite<br>
+            <input type="radio" name="css">None of the above
+        </ol>
+        <button type="button">Submit Now</button>
+    </div>
+
+    <div class="hint">
+        <button type="button">Hint</button>
+    </div>
+
+</body>
+
+</html>

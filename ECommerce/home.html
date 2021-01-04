@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe {
+            margin: 20px;
+            padding: 2px;
+            background-color: grey;
+        }
+
+        
+    </style>
+   
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <script>
+        var email = localStorage.getItem("email_value");
+        console.log("Home Page"+email);
+        document.getElementById("email").innerHTML=email;
+    </script>
+    
+    <h1>Digital E-Commerce<span id="email" style="float: right; color: burlywood;">{{email}}</span></h1> 
+    
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="products.html">Products</a>
+    <a href="career.html" target="_blank">Career</a>
+    <a href="quiz.html" target="_blank">Quiz</a>
+    <br>
+    <hr>
+    <img src="samplehtml.jpeg" alt="Image not Available" width="100%" height="400"><br><br>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/YTJg8q9Q940"></iframe>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/IUN664s7N-c"></iframe>
+</body>
+
+<!-- <button>Navigation</button>
+<div>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="products.html">Products</a>
+    <a href="career.html" target="_blank">Career</a>
+    <a href="quiz.html" target="_blank">Quiz</a>
+</div> -->
+
+</html>

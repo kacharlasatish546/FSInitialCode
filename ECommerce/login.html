@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function getUserDetails() {
+            var user = {
+                email: document.getElementById("email_id").value,
+                password: document.getElementById("pass_id").value
+            }
+            console.log("Email: " + user.email +"\n"+ "Password: " + user.password);
+            alert("Email: " + user.email + "\n"+ "Password: " + user.password);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Digital E-Commerce</h1>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="products.html">Products</a>
+    <a href="career.html" target="_blank">Career</a>
+    <a href="quiz.html" target="_blank">Quiz</a>
+    <br>
+    <hr>
+    <br>
+    <!-- action="home.html" -->
+    <form>
+        <label>Email: </label><input id="email_id" type="text"><br><br>
+        <label>Password: </label><input id="pass_id" type="text"><br><br>
+        <button onclick="getUserDetails()" type="button">Login</button><br><br>
+    </form>
+
+    <a style="margin-left: 0px;" href="forgotpassword.html">Forgotten password?</a><br><br>
+    <label>New User: </label><a href="register.html">Register</a>
+
+</body>
+
+</html>
